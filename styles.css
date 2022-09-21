@@ -1,3 +1,9 @@
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
 img {
     width: 30%;
     margin: calc(10%/6);
@@ -12,9 +18,22 @@ nav {
     margin-left: calc(10%/6);
     padding: 1.5em 0;
     font-family: 'Dancing Script', cursive;
-    font-size: 1em; 
+    font-size: 1em;
 }
+
 footer {
     font-family: 'Dancing Script', cursive;
     text-align: right;
-  }
+}
+
+@media (max-width:800px) {
+    img {
+        height: 15em;
+    }
+}
+
+@media (max-width:400px) {
+    img {
+        height: 5em;
+    }
+}
